@@ -1,9 +1,10 @@
 pipeline {
-    agent any 
+    //agent any
+    agent { node { label 'windows-demo-agent-label' } }
     stages {
         stage('Echo Pipeline Phase') {
             steps {
-                echo 'Executing the echo statement from GitHub Repository' 
+                echo 'Executing the echo statement from GitHub Repository!' 
             }
         }
     }

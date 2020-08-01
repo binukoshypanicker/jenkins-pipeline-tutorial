@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Echo Pipeline Phase') {
             steps {
-                echo 'Executing new echo statement from GitHub Repository!' 
+                echo 'Executing lisha echo statement from GitHub Repository!' 
             }
         }
     }
